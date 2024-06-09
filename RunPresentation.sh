@@ -1,6 +1,13 @@
 #!/usr/bin/bash
+#===============================================================================
+# Configuration
+
+TARGET_LINK="https://docs.google.com/presentation/d/e/2PACX-1vSwNsTygYKXvzJn2uKJUnSRNpU_xZe7IKSKJFvGxHobxuRVYGFseqzwX7adX2hHza1r1-Usdli5IflP/pub?start=true&loop=true&delayms=10000&slide=id.g28f81d2bf08_4_0"
+
+#===============================================================================
+
 sleep 3
-chromium-browser 'https://docs.google.com/presentation/d/e/2PACX-1vSwNsTygYKXvzJn2uKJUnSRNpU_xZe7IKSKJFvGxHobxuRVYGFseqzwX7adX2hHza1r1-Usdli5IflP/pub?start=true&loop=true&delayms=10000&slide=id.g28f81d2bf08_4_0' --kiosk --noerrdialogs --disable-infobars --no-first-run --start-maximized --no-sandbox &
+chromium-browser "$TARGET_LINK" --kiosk --noerrdialogs --disable-infobars --no-first-run --start-maximized --no-sandbox &
 sleep 5
 export Display=:0
 export XAUTHORITY=/root/.Xauthority
