@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=RunPresentation
+NoDisplay=false
+Exec=/usr/bin/lxterminal -e /usr/local/bin/RunPresentation.sh
+NotShowIn=GNOME;KDE;XFCE
