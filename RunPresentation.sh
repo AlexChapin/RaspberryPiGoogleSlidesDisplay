@@ -16,13 +16,19 @@ xdotool mousemove 0 10000
 xdotool click --delay 0 --repeat 1 1
 while true
 do
-	((count))
-	echo "count=$count"
-	sleep 300
-	xdotool key ctrl+r
-	if ((count > 1000)); then
-		sudo apt update
-		sudo apt upgrade
-		count=0
-	fi
+  ((count++))
+  sleep 1
+  xdotool mousemove 10000 10000
+  xdotool mousemove 0 10000
+  if ((count > 300)); then
+    xdotool key ctrl+r
+    ((count2++))
+    count="0"
+    clear
+  fi
+  if ((count2 > 1000)); then
+    sudo apt update
+    sudo apt upgrade -y
+    count2="0"
+  fi
 done
