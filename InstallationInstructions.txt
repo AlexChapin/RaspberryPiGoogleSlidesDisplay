@@ -1,4 +1,8 @@
-1. Publish a Google Slides Presentation
+1. Install Raspberry Pi OS on your RaspberryPi
+    Use Debian 12 (Bookworm) or newer
+    *Originally Built on RaspberryPiOS 5.2 newer versions should work
+
+2. Publish a Google Slides Presentation
     Go To File-Share-Publish To Web.
     Then Select The Checkboxes for Start Slideshow as Soon as the Player Loads and Restart the Slideshow After the Last Slide
     Select The Desired Time Between Slides.
@@ -6,20 +10,24 @@
 2. Place the Published Link into RunPresentation.sh at the Top Where the Portion of the Google Slides Link Is
     Make Sure What is in the Quotation Marks is the Exact Link From Google
 
-3. On the Raspberry Pi place the file runpresentation.desktop in /etc/xdg/autostart/
+3. Open RaspberryPi Settings, Go to Display, Toggle off the Screen Blanking Switch
+    Run the Following Command:
+        xset -dpms
+
+4. On the Raspberry Pi place the file runpresentation.desktop in /etc/xdg/autostart/
     Run the Following Command:
         cp ~/runpresentation.desktop/ /etc/xdg/autostart/
 
-4. On the Raspberry Pi place the file RunPresentation.sh in /usr/local/bin
+5. On the Raspberry Pi place the file RunPresentation.sh in /usr/local/bin
     Run the Following Command:
         cp ~/RunPresentation.sh/ /usr/local/bin/
 
-5. Install xdotool and update the system
+6. Install xdotool and update the system
     Run the Following Commands:
         sudo apt install xdotool
         sudo apt update
         sudo apt upgrade -y
 
-6. Reboot the Raspberry Pi and it Should Start Your Presentation
+7. Reboot the Raspberry Pi and it Should Start Your Presentation
     Run the Following Command:
         sudo reboot
