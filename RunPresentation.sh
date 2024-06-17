@@ -1,8 +1,9 @@
 #!/usr/bin/bash
 #===============================================================================
 # Configuration
+# Place Link To Google Presentation Slideshow Here
 
-TARGET_LINK="https://docs.google.com/presentation/d/e/2PACX-1vSwNsTygYKXvzJn2uKJUnSRNpU_xZe7IKSKJFvGxHobxuRVYGFseqzwX7adX2hHza1r1-Usdli5IflP/pub?start=true&loop=true&delayms=10000&slide=id.g28f81d2bf08_4_0"
+TARGET_LINK="https://docs.google.com/presentation/"
 
 #===============================================================================
 
