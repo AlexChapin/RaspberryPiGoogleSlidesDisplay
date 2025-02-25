@@ -5,7 +5,7 @@ Raspberry Pi Auto-Start and Bash Scripts to automatically display and advance a 
 
 1. Install Raspberry Pi OS on your RaspberryPi
     * Use Debian 12 (Bookworm) or newer
-    * *Originally Built on RaspberryPiOS 5.2 newer versions should work
+    * Originally Built on RaspberryPiOS 5.2 newer versions should work
 
 1. Publish a Google Slides Presentation
     * Go To File-Share-Publish To Web.
@@ -24,13 +24,13 @@ Raspberry Pi Auto-Start and Bash Scripts to automatically display and advance a 
 1. On the Raspberry Pi place the file runpresentation.desktop in /etc/xdg/autostart/
     * Run the Following Command:
     ```
-        cp ~/runpresentation.desktop/ /etc/xdg/autostart/
+    cp ~/runpresentation.desktop/ /etc/xdg/autostart/
     ```
 
 1. On the Raspberry Pi place the file RunPresentation.sh in /usr/local/bin
     * Run the Following Command:
     ```
-        cp ~/RunPresentation.sh/ /usr/local/bin/
+    cp ~/RunPresentation.sh/ /usr/local/bin/
     ```
 
 1. Install xdotool and update the system
